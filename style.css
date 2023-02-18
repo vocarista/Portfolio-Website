@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 767px){
     #container{
         min-width: 90vw;
         min-height: 40vh;
@@ -14,6 +14,7 @@
     }
     body{
         flex-direction: column;
+        overflow-y: scroll;
     }
     *{
         text-align: center;
@@ -23,9 +24,10 @@
         width:30px;
         height:30px;
     }
-    ul{
-        position: absolute;
-        grid-template-columns: 1fr 1fr 1fr;
+    #social{
+        position: fixed;
+        flex-direction: row;
+        justify-content: center;
         bottom: 0;
     }
     ul li{
@@ -33,6 +35,13 @@
     }
     #education{
         text-align: left;
+    }
+    #skill-grid{
+        display: flex !important;
+        flex-direction:column;
+    }
+    .skills-child{
+        display: block;
     }
 }
 
@@ -46,9 +55,9 @@ h1{
     padding: 10px;
 }
 
-ul{
-    display: grid;
-    grid-template-columns: 1fr;
+#social{
+    display: flex;
+    flex-direction: column;
     list-style: none;
     position: fixed;
     right: 0;
@@ -194,9 +203,11 @@ body{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
-#skills-grid{
+#skill-grid{
     display: grid;
+    width: 90%;
     grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
 }
 .skills-child{
     display: flex;
