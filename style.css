@@ -27,12 +27,12 @@
     #social{
         position: fixed;
         flex-direction: row !important;
-        justify-content: space-evenly;
+        justify-content: center;
         bottom: 0;
-        width: 40vw;
+        width: 100vw;
     }
     ul li{
-        padding: 5px 2px;
+        padding: 5px 5px;
     }
     #education{
         text-align: left;
