@@ -222,7 +222,7 @@ body{
     display: grid;
     width: 90%;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
+    column-gap: 15px;
 }
 .skills-child{
     display: flex;
