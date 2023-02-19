@@ -129,6 +129,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.8s;
 }
 #intro img{
     height: auto;
@@ -145,6 +146,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fadeIn 0.8s;
 }
 
 #about p{
@@ -156,6 +158,7 @@ body{
     flex-direction: column;
     text-align: left;
     align-items: center;
+    animation: fadeIn 0.8s;
 }
 .edu-child{
     display: flex;
@@ -204,6 +207,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    animation: fadeIn 0.8s;
 }
 #skills img{
     width: 40px;
@@ -228,4 +232,13 @@ body{
     border: none;
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }

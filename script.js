@@ -4,6 +4,7 @@ const about= document.getElementById('about');
 const edu= document.getElementById('education');
 const skills= document.getElementById('skills');
 const buttons= document.querySelectorAll('button')
+const container= document.querySelector('#container');
 let state=1;
 
 //background code-------------------------------------------------------------------------
